@@ -40,3 +40,12 @@ button:active{
 #done:hover{
     background-color: rgb(147, 179, 182);
 }
+
+#chR, #anxR, #stR, #deR, #angR, #subhead{
+    display: none;
+}
+
+#subhead{
+    margin-top: 60px;
+    text-decoration: underline;
+}

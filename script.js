@@ -360,20 +360,30 @@ no21.addEventListener('click', () => {
 
 /*DONE*/
 done.addEventListener('click', () => {
+    done.disabled=true;
+
     if (inpCh.value >= inpAnx.value && inpCh.value >= inpSt.value && inpCh.value >= inpDe.value && inpCh.value >= inpAng.value) {
-        message += "\n“Say Yes” by Michelle Williams feat. Beyoncé and Kelly Rowland \n“Fireworks” by Katy Perry \n“I Gotta Feeling” by The Black Eyed Peas";
+        var ch = document.getElementById("chR");
+        ch.style.display = "block";
     }
     if (inpAnx.value >= inpCh.value && inpAnx.value >= inpSt.value && inpAnx.value >= inpDe.value && inpAnx.value >= inpAng.value) {
-        message += "\n“Weightless” by Marconi Union \n“Moonlight sonata” by Ludwig van Beethoven \n“Shallow” by Lady Gaga, Bradley Cooper";
+        var anx = document.getElementById("anxR");
+        anx.style.display = "block";
     }
     if (inpSt.value >= inpAnx.value && inpSt.value >= inpCh.value && inpSt.value >= inpDe.value && inpSt.value >= inpAng.value) {
-        message += "\n“Amsterdam” by Imagine Dragons \n“Imagine” by A Perfect Circle \n“Yellow” by Coldplay";
+        var st = document.getElementById("stR");
+        st.style.display = "block";
     }
     if (inpDe.value >= inpAnx.value && inpDe.value >= inpSt.value && inpDe.value >= inpCh.value && inpDe.value >= inpAng.value) {
-        message += "\n“Bruises” by Lewis Capaldi \n“The Scientist” by Coldplay \n“Landfill” by Daughter";
+        var de = document.getElementById("deR");
+        de.style.display = "block";
     }
     if (inpAng.value >= inpAnx.value && inpAng.value >= inpSt.value && inpAng.value >= inpDe.value && inpAng.value >= inpCh.value) {
-        message += "\n“Am I Savage” by Metallica \n“Avalanche” by Bring Me The Horizon \n“Upperdrugs” by Highly Suspect";
+        var ang = document.getElementById("angR");
+        ang.style.display = "block";
     }
-    window.alert(message)
+
+    var subhead = document.getElementById("subhead");
+    subhead.style.display = "block";
+    window.alert("Scroll down to see your recommendations");
 });

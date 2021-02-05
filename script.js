@@ -385,5 +385,5 @@ done.addEventListener('click', () => {
 
     var subhead = document.getElementById("subhead");
     subhead.style.display = "block";
-    window.alert("Scroll down to see your recommendations");
+    window.alert("Scroll down to see your recommendations \nHope you feel better!");
 });

@@ -49,3 +49,11 @@ button:active{
     margin-top: 60px;
     text-decoration: underline;
 }
+
+.description{
+    width: 40%;
+    margin: 0 auto 40px auto;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid rgb(92, 92, 92);
+}
